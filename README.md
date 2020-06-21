@@ -1,4 +1,4 @@
-# <h1 style="text-align: center;">![Logo](https://user-images.githubusercontent.com/11545976/85130568-88ef7400-b20b-11ea-8ca3-a949021a6ade.png)</h1>
+# <h1 align="center">![Logo](https://user-images.githubusercontent.com/11545976/85130568-88ef7400-b20b-11ea-8ca3-a949021a6ade.png)</h1>
 
 ## :page_facing_up: Summary
 
