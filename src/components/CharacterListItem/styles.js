@@ -1,8 +1,7 @@
 import styled from 'styled-components/native';
 
-import { spacing, colors } from '../../styles/variables';
+import { spacing } from '../../styles/variables';
 
-import { Title } from '../../styles/typo';
 import LinearGradient from 'react-native-linear-gradient';
 
 export const TouchableContainer = styled.TouchableOpacity`
@@ -31,19 +30,3 @@ export const CharImage = styled.Image`
     border-radius: 16px;
     position: absolute;
 `
-
-export const CharInfo = styled.View`
-    padding: ${spacing.sm}px;
-    flex-flow: column nowrap;
-`
-
-export const CharName = styled(Title)`
-    color: ${colors.primaryWhite};
-    font-size: 20px;
-`
-
-export const CharAlterEgo = styled.Text`
-    color: ${colors.primaryWhite};
-    font-family: gilroy-mendium;
-    font-size: 14px;
-`;

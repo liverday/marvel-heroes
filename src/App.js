@@ -14,24 +14,21 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
-import {
-  StatusBar
-} from 'react-native'
-
-import { colors } from './styles/variables';
-
 import Home from './pages/Home'
+import Character from './pages/Character';
 
 const App = () => {
   return (
     <>
-      <StatusBar backgroundColor={colors.primarySilver} barStyle='dark-content' />
       <NavigationContainer>
         <Stack.Navigator
+          initialRouteName="Home"
           screenOptions={{
             headerShown: false
-          }}>
+          }}
+        >
           <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="Character" component={Character} />
         </Stack.Navigator>
       </NavigationContainer>
     </>

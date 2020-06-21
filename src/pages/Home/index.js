@@ -7,15 +7,24 @@ import Categories from '../../components/Categories';
 import CharacterList from '../../components/CharactersList';
 import { ScrollView } from 'react-native-gesture-handler';
 
-export default function HomeScreen() {
+import {
+    StatusBar
+} from 'react-native'
+
+import { colors } from '../../styles/variables';
+
+export default function HomeScreen({ navigation }) {
     return (
-        <MainContainer>
-            <ScrollView>
+        <>
+            <StatusBar backgroundColor={colors.primarySilver} barStyle='dark-content' />
+            <MainContainer>
                 <Header />
-                <Brand />
-                <Categories />
-                <CharacterList />
-            </ScrollView>
-        </MainContainer>
+                <ScrollView>
+                    <Brand />
+                    <Categories />
+                    <CharacterList navigation={navigation} />
+                </ScrollView>
+            </MainContainer>
+        </>
     )
 }

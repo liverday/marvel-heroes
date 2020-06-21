@@ -13,5 +13,13 @@ export const Title = styled(DefaultText)`
 `
 
 export const Subtitle = styled(DefaultText)`
-    font-family: gilroy-hedium;
+    font-family: gilroy-medium;
+`
+
+export const GilroyBold = styled(DefaultText)`
+    font-family: gilroy-bold;
+`
+
+export const GilroyRegular = styled(DefaultText)`
+    font-family: gilroy-regular;
 `

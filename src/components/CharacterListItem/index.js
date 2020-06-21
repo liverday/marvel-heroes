@@ -1,10 +1,15 @@
 import React from 'react';
 
-import { Container, TouchableContainer, Gradient, CharImage, CharInfo, CharAlterEgo, CharName } from './styles'
+import { Container, TouchableContainer, Gradient, CharImage } from './styles'
 
-export default function CharacterListItem({ data }) {
+import CharacterNameInfo from '../CharacterNameInfo';
+
+export default function CharacterListItem({ data, onCharacterPressed }) {
+
     return (
-        <TouchableContainer>
+        <TouchableContainer
+            onPress={() => onCharacterPressed(data)}
+        >
             <Container>
                 <CharImage source={{ uri: data.imagePath }} imageStyle={{ borderRadius: 16 }} />
                 <Gradient 
@@ -12,11 +17,8 @@ export default function CharacterListItem({ data }) {
                     end={{ x: 0, y: 1 }}
                     colors={['rgba(0, 0, 0, 0)', '#000000']}    
                 />
-                <CharInfo>
-                    <CharAlterEgo>{data.alterEgo}</CharAlterEgo>
-                    <CharName>{data.name}</CharName>
-                </CharInfo>
-            
+
+                <CharacterNameInfo name={data.name} alterEgo={data.alterEgo} />
             </Container>
         </TouchableContainer>
     )
