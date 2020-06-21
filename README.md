@@ -1,4 +1,4 @@
-# <center>![Logo](https://user-images.githubusercontent.com/11545976/85130568-88ef7400-b20b-11ea-8ca3-a949021a6ade.png)</center>
+# <h1 style="text-align: center;">![Logo](https://user-images.githubusercontent.com/11545976/85130568-88ef7400-b20b-11ea-8ca3-a949021a6ade.png)</h1>
 
 ## :page_facing_up: Summary
 
@@ -6,14 +6,17 @@
 - :computer: [Techs](#-techs)
 - :running: [How to Run](#-how-to-run)
 
-## :bulb: About
+<h2 id="-about">
+    :bulb: About
+</h2>
 
 Mobile app developed based on a challenged proposed by [umpontoseis](https://umpontoseis.com/), the challenge is available on [Figma](https://figma.com) and you can access it [here](https://www.figma.com/community/file/849367817302905364/Marvel-Heroes).
 
-## :computer: Techs
+<h2 id="-techs">
+    :computer: Techs
+</h2>
 
  - React Native
- - typescript
  - json-server
  - axios
  - styled-components
@@ -21,7 +24,9 @@ Mobile app developed based on a challenged proposed by [umpontoseis](https://ump
  - react-native-svg-transformer
  - react-native-linear-gradient
 
-## :running: How to Run
+<h2 id="-how-to-run">
+    :running: How to Run
+</h2>
 
 ```bash
   # cloning repository
