@@ -16,7 +16,7 @@
     "@react-navigation/stack": "^5.5.1",
     "@svgr/core": "^5.4.0",
     "@svgr/plugin-svgo": "^5.4.0",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "json-server": "^0.16.1",
     "react": "16.11.0",
     "react-native": "0.62.3",
